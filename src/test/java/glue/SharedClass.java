@@ -9,12 +9,13 @@ import pages.HomePage;
 
 
 
-public class SharedClass {
+public class SharedClass 
+{
 	
 	public RemoteWebDriver driver;
 	
-	public HomePage obj1;
-	public FlightsPage obj2;
+	public HomePage obj1; //declare HomePage object
+	public FlightsPage obj2; //declare HomePage object
 	
 	public Scenario s;
 	
