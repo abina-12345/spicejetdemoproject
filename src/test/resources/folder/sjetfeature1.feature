@@ -1,7 +1,7 @@
 Feature: lowest fare
 
   Scenario Outline: 
-    When open "<bn>" browser
+    When open "<bn>" browser 
     And launch "https://www.spicejet.com/" site
     And select roundtrip
     And enter the depart "<frm>" city

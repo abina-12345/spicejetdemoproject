@@ -15,7 +15,7 @@ public class StepDefiniton1 {
 	
 	public SharedClass sh;
 	//Dependency injection via constructor
-	public StepDefiniton1(SharedClass x)
+	public StepDefiniton1(SharedClass x) 
 	{ 
 		sh=x;
 	}

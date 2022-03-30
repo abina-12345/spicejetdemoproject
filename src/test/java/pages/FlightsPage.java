@@ -96,10 +96,7 @@ public class FlightsPage {
 			else if(hfare<Integer.parseInt(num))
 			{
 				hfare=Integer.parseInt(num);
-				/*WebElement rb=flight.findElement(By.xpath("child::div/div[2]/div[1]//*[name()='svg']"));
-				driver.executeScript("arguments[0].scrollIntoView();",rb);
-				rb.click();
-				*/
+				
 				flight.findElement(By.xpath("child::div/div[2]/div[1]//*[name()='svg']/ancestor::div[2]")).click();
 				
 			}
@@ -129,10 +126,7 @@ public class FlightsPage {
 			else if(hfare<Integer.parseInt(num))
 			{
 				hfare=Integer.parseInt(num);
-				/*WebElement rb=flight.findElement(By.xpath("child::div/div[2]/div[1]//*[name()='svg']"));
-				driver.executeScript("arguments[0].scrollIntoView();",rb);
-				rb.click();
-				*/
+				
 				flight.findElement(By.xpath("child::div/div[2]/div[1]//*[name()='svg']/ancestor::div[2]")).click();
 				
 			}

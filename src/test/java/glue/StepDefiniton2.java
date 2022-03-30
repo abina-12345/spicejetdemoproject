@@ -11,7 +11,7 @@ public class StepDefiniton2 {
 	//Dependency injection via constructor
 	public StepDefiniton2(SharedClass x)
 	{ 
-		sh=x; 
+		sh=x;  
 	}
 	
 	 @When("click on highest fare for departure flight")

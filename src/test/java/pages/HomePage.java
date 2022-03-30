@@ -15,11 +15,11 @@ public class HomePage {
 	
 	@FindBy(xpath="//div[text()='From']/following::input[1]") public WebElement from;
 	@FindBy(xpath="//div[text()='To']/following::input[1]") public WebElement to;
-	//@FindBy(xpath="//div[@data-focusable='true'])[16]") public WebElement calendar;
+	
 	@FindBy(xpath="//div[@data-testid='round-trip-radio-button']") public WebElement roundtrip;
 	@FindBy(xpath="(//div[text()='Search Flight'])[1]/parent::div") public WebElement searchFlight;
 	@FindBy(xpath="(//div[contains(@data-testid,'undefined-month')])[1]/ancestor::div[2]") public WebElement calendar;
-	//@FindBy(xpath="(//div[contains(@data-testid,'undefined-month')])[1]/ancestor::div[2]") public WebElement calendar2;
+	
 	@FindBy(xpath="(//div[text()='Departure Date']/following::*[name()='svg'])[1]") public WebElement depcalendar;
 	@FindBy(xpath="(//div[text()='Return Date']/following::*[name()='svg'])[1]") public WebElement retcalendar;
 	
@@ -66,7 +66,7 @@ public class HomePage {
 	
 	public void selectDepartureDate(RemoteWebDriver driver, int x, String y, int z) throws Exception
 	{
-		//calendar.click();
+		
 		DivCalendarUtility obj=new DivCalendarUtility();
 		obj.selectDate(driver, calendar,x ,y ,z);
 		Thread.sleep(10000);
@@ -75,7 +75,7 @@ public class HomePage {
 	public void selectReturnDate(RemoteWebDriver driver, int x, String y, int z) throws Exception
 	{
 		DivCalendarUtility obj=new DivCalendarUtility();
-		//retcalendar.click();
+		
 		obj.selectDate(driver, calendar, x, y, z);
 	}
 	
